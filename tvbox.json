@@ -1,11 +1,11 @@
 {
-  "_comment": "Marco Movie 订阅入口。全部走 jsdelivr CDN，代理开关都不影响；本仓库引用固定 SHA 绕开缓存。2026-11-07 实测。",
+  "_comment": "Marco Movie 订阅（2026-11-07 全量实测重建）。①点播 6 个采集站：360 实测 7.3Mbps/真1920x1080 居首，原 1080x608 低质源已剔除；②4K/高码率：直连 OneDrive 原盘，含 2160p 与 ≥15GB 蓝光，42 条实测可播；③直播：仅收录连续取最新分片成功的线路。全部 jsdelivr，代理开关均可直连。",
   "sites": [
     {
-      "key": "lziapi",
-      "name": "量子·综合(带MP4高码率直链)",
+      "key": "zy360",
+      "name": "★360·实测7.3Mbps真1080p",
       "type": 1,
-      "api": "https://cj.lziapi.com/api.php/provide/vod/",
+      "api": "https://360zy.com/api.php/provide/vod/",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -13,7 +13,7 @@
     },
     {
       "key": "ffzyapi",
-      "name": "非凡·极速更新",
+      "name": "非凡·更新最快",
       "type": 1,
       "api": "https://cj.ffzyapi.com/api.php/provide/vod/",
       "searchable": 1,
@@ -22,20 +22,10 @@
       "ext": ""
     },
     {
-      "key": "apibdzy",
-      "name": "博大·4K电影/体育",
+      "key": "zuidapi",
+      "name": "最大·1080p",
       "type": 1,
-      "api": "https://api.apibdzy.com/api.php/provide/vod/",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": ""
-    },
-    {
-      "key": "wujinapi",
-      "name": "无尽·当日体育赛事录像",
-      "type": 1,
-      "api": "https://api.wujinapi.me/api.php/provide/vod/",
+      "api": "https://api.zuidapi.com/api.php/provide/vod/",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
@@ -50,58 +40,106 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": ""
+    },
+    {
+      "key": "wujin",
+      "name": "无尽·体育赛事",
+      "type": 1,
+      "api": "https://api.wujinapi.me/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": ""
+    },
+    {
+      "key": "tyyszy",
+      "name": "天涯·备用",
+      "type": 1,
+      "api": "https://tyyszy.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": ""
     }
   ],
   "lives": [
     {
-      "name": "① 央视卫视高清·自动更新(EPG)",
+      "name": "★ 4K/高码率影视（真实测直链）",
       "type": 0,
-      "url": "https://cdn.jsdelivr.net/gh/fanmingming/live@main/tv/m3u/index.m3u",
+      "url": "https://cdn.jsdelivr.net/gh/dsyzzzz/marco-list@main/4k.m3u",
       "playerType": 1,
       "ua": "okhttp/3.15.3",
-      "epg": "https://cdn.jsdelivr.net/gh/fanmingming/live@main/e.xml",
+      "epg": "",
       "logo": "",
-      "timeout": 20
+      "timeout": 60
     },
     {
-      "name": "② 综合·央视卫视体育4K(活水兜底)",
+      "name": "★ 直播·实测可用线路",
       "type": 0,
-      "url": "https://cdn.jsdelivr.net/gh/iptv-org/iptv@master/streams/cn.m3u",
+      "url": "https://cdn.jsdelivr.net/gh/dsyzzzz/marco-list@main/live.m3u",
       "playerType": 1,
       "ua": "okhttp/3.15.3",
       "epg": "https://cdn.jsdelivr.net/gh/fanmingming/live@main/e.xml",
       "logo": "",
-      "timeout": 20
+      "timeout": 30
     },
     {
-      "name": "③ 【自建精选】4K/卫视/体育",
+      "name": "Guovin·每日自动测速(兜底)",
       "type": 0,
-      "url": "https://cdn.jsdelivr.net/gh/dsyzzzz/marco-list@535c4e0034d8/live.m3u",
+      "url": "https://cdn.jsdelivr.net/gh/Guovin/iptv-api@gd/output/result.m3u",
       "playerType": 1,
       "ua": "okhttp/3.15.3",
       "epg": "https://cdn.jsdelivr.net/gh/fanmingming/live@main/e.xml",
       "logo": "",
-      "timeout": 20
+      "timeout": 30
     }
   ],
   "parses": [],
   "flags": [],
   "ijk": [
     {
-      "group": "软解码",
+      "group": "硬解优先(4K必备)",
       "options": [
-        { "category": 4, "name": "framedrop", "value": "1" },
-        { "category": 4, "name": "max-fps", "value": "60" },
-        { "category": 4, "name": "packet-buffering", "value": "0" }
-      ]
-    },
-    {
-      "group": "硬解码(IJK/EXO通用)",
-      "options": [
-        { "category": 4, "name": "mediacodec", "value": "1" },
-        { "category": 4, "name": "mediacodec-auto-rotate", "value": "1" },
-        { "category": 4, "name": "mediacodec-hevc", "value": "1" },
-        { "category": 4, "name": "opensles", "value": "0" }
+        {
+          "category": 4,
+          "name": "mediacodec",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec-hevc",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec-auto-rotate",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "opensles",
+          "value": "0"
+        },
+        {
+          "category": 4,
+          "name": "framedrop",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "max-fps",
+          "value": "60"
+        },
+        {
+          "category": 4,
+          "name": "packet-buffering",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "max-buffer-size",
+          "value": "31457280"
+        }
       ]
     }
   ],

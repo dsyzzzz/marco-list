@@ -25,25 +25,51 @@
 | 文件 | 作用 | 要不要改 |
 |---|---|---|
 | `live.m3u` | **直播清单**，69 个频道 / **98 条线路**（央视 18 + 4K 6 + 卫视 33 + 体育 9 + 其他 3，每频道 1–3 条备份） | 换源时改 |
-| `tvbox.json` | **订阅入口**，把 5 个点播采集站 + 3 条直播源打包 | 上传后改 1 个 URL |
+| `tvbox.json` | **订阅入口**，把 5 个点播采集站 + 3 条直播源打包（raw 地址已写死） | 不用改 |
 | `check.mjs` | 体检脚本，一键测出哪些线路死了 | 不用改 |
+| `README.md` | 仓库首页说明 | — |
 | `SOURCES.md` | 本文 | — |
 
 ---
 
-## 三、立刻可用（3 步，约 10 分钟）
+## 三、已上线（2026-11-07 已完成）
 
-### 步骤 1：把两个文件放到一个能生成 raw 链接的地方
+仓库已建好并推送完毕，raw 三个文件实测均返回 `200`：
 
-三选一，推荐 A：
+| 地址 | 内容 | 状态 |
+|---|---|---|
+| https://github.com/dsyzzzz/marco-list | 公开仓库 | 已创建 |
+| `https://raw.githubusercontent.com/dsyzzzz/marco-list/main/tvbox.json` | 订阅入口 3076 B | 200 |
+| `https://raw.githubusercontent.com/dsyzzzz/marco-list/main/live.m3u` | 直播清单 21169 B | 200 |
+| `https://raw.githubusercontent.com/dsyzzzz/marco-list/main/README.md` | 说明 1346 B | 200 |
 
-**A. GitHub 私有/公开仓库（推荐）**
+`tvbox.json` 里 `lives[2].url` 已写成你自己 `live.m3u` 的 raw 地址，不用再改。
+另外两条（fanmingming、iptv-org）保留作兜底——它们是自动更新的活水，你自建清单哪天全挂了还能救回来。
+
+### 现在只差一步：Marco Movie 导入
+
 ```
-新建仓库 marco-list（名字随意）
-上传 live.m3u、tvbox.json
-点文件 → 「Raw」→ 复制地址栏，形如：
-https://raw.githubusercontent.com/你的用户名/marco-list/main/tvbox.json
+设置 → 订阅管理 / 配置地址 → 粘贴：
+https://raw.githubusercontent.com/dsyzzzz/marco-list/main/tvbox.json
+→ 确定 → 重启 App
 ```
+
+导入后应该看到：点播 5 个站点、直播 3 个分组。搜一部正在更新的剧（如「现在就出发第四季」）验证点播；进「央视高清」「4K超高清」「体育」分组验证直播。
+
+### 以后换源的完整动作
+
+```
+改本地 F:\dsh_workspace\my-list\ 里的文件
+→ node check.mjs              （体检）
+→ git add -A && git commit -m "换源" && git push
+→ 播放器端下拉刷新订阅       （Raw CDN 缓存最长 5 分钟，急用加 ?v=2）
+```
+
+本机 git 已配置 `http/https.proxy = http://127.0.0.1:7899`，推送走这个代理；凭据由 Git Credential Manager 保管，不用反复输密码。
+
+### 附：若想迁移到别的托管（当前用 A）
+
+**A. GitHub 仓库（当前采用）** — 已就绪，无需操作。
 
 **B. Gist**
 ```
@@ -56,19 +82,6 @@ https://gist.github.com/ 新建，文件名必须是 tvbox.json / live.m3u
 或任意静态服务器（甚至 `python -m http.server 8000`）。
 
 > 播放器只认「一个能直接 GET 到文本的 URL」。放哪都行，唯一要求是 Marco Movie 能访问到。
-
-### 步骤 2：改 tvbox.json 里的一个占位
-
-把 `lives` 里第三条 `"【自建·替换这里】精选源"` 的 `url` 换成你**自己 `live.m3u` 的 raw 地址**。
-然后把另外两条（fanmingming、iptv-org）删掉或保留作兜底——建议**保留**，它们是自动更新的活水，你自建清单哪天全挂了还能救回来。
-
-### 步骤 3：Marco Movie 导入
-
-```
-设置 → 订阅管理 / 配置地址 → 粘贴 tvbox.json 的 raw 链接 → 确定 → 重启 App
-```
-
-导入后应该看到：点播 5 个站点、直播 3 个分组。搜一部正在更新的剧（如「现在就出发第四季」）验证点播；进「央视高清」「4K超高清」「体育」分组验证直播。
 
 ---
 

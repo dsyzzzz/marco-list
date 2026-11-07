@@ -31,4 +31,11 @@ node check.mjs --json          # 只看机器可读汇总
 
 报 `all-dead` 的频道 → 去 `SOURCES.md` 里的上游仓库搜同名换新地址 → 追加一条同 `tvg-id` 的备线 → push。
 
+```bash
+git add -A && git commit -m "换源" && git push
+```
+
+本机推送走 `http://127.0.0.1:7899` 代理，凭据由 Git Credential Manager 保管。
+
 源清单整理 / 实测日期：2026-11-07。
+仓库：https://github.com/dsyzzzz/marco-list

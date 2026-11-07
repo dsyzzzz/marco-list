@@ -1,5 +1,5 @@
 {
-  "_comment": "Marco Movie 订阅入口。全部走 jsdelivr CDN，代理开关都不影响；改源后 push 到 GitHub 即可。2026-11-07 实测。",
+  "_comment": "Marco Movie 订阅入口。全部走 jsdelivr CDN，代理开关都不影响；本仓库引用固定 SHA 绕开缓存。2026-11-07 实测。",
   "sites": [
     {
       "key": "lziapi",
@@ -56,10 +56,10 @@
     {
       "name": "① 央视卫视高清·自动更新(EPG)",
       "type": 0,
-      "url": "https://cdn.jsdelivr.net/gh/fanmingming/live@04d4c3b59877/tv/m3u/index.m3u",
+      "url": "https://cdn.jsdelivr.net/gh/fanmingming/live@main/tv/m3u/index.m3u",
       "playerType": 1,
       "ua": "okhttp/3.15.3",
-      "epg": "https://cdn.jsdelivr.net/gh/fanmingming/live@04d4c3b59877/e.xml",
+      "epg": "https://cdn.jsdelivr.net/gh/fanmingming/live@main/e.xml",
       "logo": "",
       "timeout": 20
     },
@@ -69,17 +69,17 @@
       "url": "https://cdn.jsdelivr.net/gh/iptv-org/iptv@master/streams/cn.m3u",
       "playerType": 1,
       "ua": "okhttp/3.15.3",
-      "epg": "https://cdn.jsdelivr.net/gh/fanmingming/live@04d4c3b59877/e.xml",
+      "epg": "https://cdn.jsdelivr.net/gh/fanmingming/live@main/e.xml",
       "logo": "",
       "timeout": 20
     },
     {
       "name": "③ 【自建精选】4K/卫视/体育",
       "type": 0,
-      "url": "https://cdn.jsdelivr.net/gh/dsyzzzz/marco-list@04d4c3b59877/live.m3u",
+      "url": "https://cdn.jsdelivr.net/gh/dsyzzzz/marco-list@535c4e0034d8/live.m3u",
       "playerType": 1,
       "ua": "okhttp/3.15.3",
-      "epg": "https://cdn.jsdelivr.net/gh/fanmingming/live@04d4c3b59877/e.xml",
+      "epg": "https://cdn.jsdelivr.net/gh/fanmingming/live@main/e.xml",
       "logo": "",
       "timeout": 20
     }
@@ -90,18 +90,46 @@
     {
       "group": "软解码",
       "options": [
-        { "category": 4, "name": "framedrop", "value": "1" },
-        { "category": 4, "name": "max-fps", "value": "60" },
-        { "category": 4, "name": "packet-buffering", "value": "0" }
+        {
+          "category": 4,
+          "name": "framedrop",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "max-fps",
+          "value": "60"
+        },
+        {
+          "category": 4,
+          "name": "packet-buffering",
+          "value": "0"
+        }
       ]
     },
     {
       "group": "硬解码(IJK/EXO通用)",
       "options": [
-        { "category": 4, "name": "mediacodec", "value": "1" },
-        { "category": 4, "name": "mediacodec-auto-rotate", "value": "1" },
-        { "category": 4, "name": "mediacodec-hevc", "value": "1" },
-        { "category": 4, "name": "opensles", "value": "0" }
+        {
+          "category": 4,
+          "name": "mediacodec",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec-auto-rotate",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "mediacodec-hevc",
+          "value": "1"
+        },
+        {
+          "category": 4,
+          "name": "opensles",
+          "value": "0"
+        }
       ]
     }
   ],

@@ -1,1 +1,41 @@
-IyBtYXJjby1saXN0IMK3IE1hcmNvIE1vdmllIOiHquW7uuiuoumYhea4heWNlQoKPiDkuIDlpZfpm7bmnI3liqHlmajnmoQgVFZCb3ggLyBNYXJjbyBNb3ZpZSDorqLpmIXvvJo1IOS4queCueaSremHh+mbhua6kCArIDMg5p2h55u05pKt5rqQICsg5LiA5Lu95bim5aSH5Lu957q/6Lev55qE57K+6YCJ55u05pKt5riF5Y2V44CCCgojIyDorqLpmIXlnLDlnYDvvIjlr7zlhaUgTWFyY28gTW92aWUg55So6L+Z5Liq77yJCgpgYGAKaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2RzeXp6enovbWFyY28tbGlzdC9tYWluL3R2Ym94Lmpzb24KYGBgCgrorr7nva4g4oaSIOiuoumYheeuoeeQhiAvIOmFjee9ruWcsOWdgCDihpIg57KY6LS05LiK6Z2i6L+Z5p2hIOKGkiDnoa7lrpog4oaSIOmHjeWQryBBcHDjgIIKCj4g6IulIENETiDnvJPlrZjmnKrmm7TmlrDvvIzlnKjpk77mjqXlkI7liqAgYD92PTJgIOW8uuWItuWIt+aWsOOAggoKIyMg5paH5Lu2Cgp8IOaWh+S7tiB8IOivtOaYjiB8CnwtLS18LS0tfAp8IGB0dmJveC5qc29uYCB8IOiuoumYheWFpeWPo++8mjUg5Liq6Iu55p6cQ01TIOeCueaSreaOpeWPoyArIGZhbm1pbmdtaW5nIC8gaXB0di1vcmcgLyDmnKzku5PlupMgbGl2ZS5tM3Ug5LiJ5p2h55u05pKtIHwKfCBgbGl2ZS5tM3VgIHwg6Ieq5bu655u05pKt5riF5Y2V77yaNjkg6aKR6YGTIC8gOTgg5p2h57q/6Lev77yM5aSu6KeGMTggKyA0SzYgKyDljavop4YzMyArIOS9k+iCsjkgKyDlhbbku5Yz77yM5q+P6aKR6YGTIDHigJMzIOWkh+S7vSB8CnwgYGNoZWNrLm1qc2AgfCDkvZPmo4DohJrmnKzvvJpgbm9kZSBjaGVjay5tanNgIOa1i+atu+mTvuW5tueUn+aIkCBgcmVwb3J0Lmpzb25gIHwKfCBgU09VUkNFUy5tZGAgfCDlrozmlbTnu7TmiqTmiYvlhozvvJrmupDlh7rlpITjgIHmjaLmupDmraXpqqTjgIHmlYXpmpzmjpLmn6XjgIE0SyDkuI7kvZPogrLnmoTnjrDlrp7or7TmmI4gfAoKIyMg57u05oqkCgpgYGBiYXNoCm5vZGUgY2hlY2subWpzICAgICAgICAgICAgICAgICAjIOS9k+ajgOWFqOmDqOe6v+i3rwpub2RlIGNoZWNrLm1qcyAtLXRpbWVvdXQ9ODAwMCAgIyDnvZHnu5zmhaLml7bmlL7lrr3otoXml7YKbm9kZSBjaGVjay5tanMgLS1qc29uICAgICAgICAgICMg5Y+q55yL5py65Zmo5Y+v6K+75rGH5oC7CmBgYAoK5oqlIGBhbGwtZGVhZGAg55qE6aKR6YGTIOKGkiDljrsgYFNPVVJDRVMubWRgIOmHjOeahOS4iua4uOS7k+W6k+aQnOWQjOWQjeaNouaWsOWcsOWdgCDihpIg6L+95Yqg5LiA5p2h5ZCMIGB0dmctaWRgIOeahOWkh+e6vyDihpIgcHVzaOOAggoKYGBgYmFzaApnaXQgYWRkIC1BICYmIGdpdCBjb21taXQgLW0gIuaNoua6kCIgJiYgZ2l0IHB1c2gKYGBgCgrmnKzmnLrmjqjpgIHotbAgYGh0dHA6Ly8xMjcuMC4wLjE6Nzg5OWAg5Luj55CG77yM5Yet5o2u55SxIEdpdCBDcmVkZW50aWFsIE1hbmFnZXIg5L+d566h44CCCgrmupDmuIXljZXmlbTnkIYgLyDlrp7mtYvml6XmnJ/vvJoyMDI2LTExLTA344CCCuS7k+W6k++8mmh0dHBzOi8vZ2l0aHViLmNvbS9kc3l6enp6L21hcmNvLWxpc3QK
+# marco-list · Marco Movie 自建订阅清单
+
+> 一套零服务器的 TVBox / Marco Movie 订阅：5 个点播采集源 + 3 条直播源 + 一份带备份线路的精选直播清单。
+
+## 订阅地址（导入 Marco Movie 用这个）
+
+```
+https://raw.githubusercontent.com/dsyzzzz/marco-list/main/tvbox.json
+```
+
+设置 → 订阅管理 / 配置地址 → 粘贴上面这条 → 确定 → 重启 App。
+
+> 若 CDN 缓存未更新，在链接后加 `?v=2` 强制刷新。
+
+## 文件
+
+| 文件 | 说明 |
+|---|---|
+| `tvbox.json` | 订阅入口：5 个苹果CMS 点播接口 + fanmingming / iptv-org / 本仓库 live.m3u 三条直播 |
+| `live.m3u` | 自建直播清单：69 频道 / 98 条线路，央视18 + 4K6 + 卫视33 + 体育9 + 其他3，每频道 1–3 备份 |
+| `check.mjs` | 体检脚本：`node check.mjs` 测死链并生成 `report.json` |
+| `SOURCES.md` | 完整维护手册：源出处、换源步骤、故障排查、4K 与体育的现实说明 |
+
+## 维护
+
+```bash
+node check.mjs                 # 体检全部线路
+node check.mjs --timeout=8000  # 网络慢时放宽超时
+node check.mjs --json          # 只看机器可读汇总
+```
+
+报 `all-dead` 的频道 → 去 `SOURCES.md` 里的上游仓库搜同名换新地址 → 追加一条同 `tvg-id` 的备线 → push。
+
+```bash
+git add -A && git commit -m "换源" && git push
+```
+
+本机推送走 `http://127.0.0.1:7899` 代理，凭据由 Git Credential Manager 保管。
+
+源清单整理 / 实测日期：2026-11-07。
+仓库：https://github.com/dsyzzzz/marco-list

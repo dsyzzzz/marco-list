@@ -6,7 +6,7 @@
 ## 订阅地址（导入 Marco Movie 用这个）
 
 ```
-https://cdn.jsdelivr.net/gh/dsyzzzz/marco-list@da2db24ab177/tvbox.json
+https://cdn.jsdelivr.net/gh/dsyzzzz/marco-list@52bd1612e066/tvbox.json
 ```
 
 设置 → 订阅管理 / 配置地址 → 粘贴上面这条 → 确定 → 重启 App。

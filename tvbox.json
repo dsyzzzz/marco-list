@@ -90,46 +90,18 @@
     {
       "group": "软解码",
       "options": [
-        {
-          "category": 4,
-          "name": "framedrop",
-          "value": "1"
-        },
-        {
-          "category": 4,
-          "name": "max-fps",
-          "value": "60"
-        },
-        {
-          "category": 4,
-          "name": "packet-buffering",
-          "value": "0"
-        }
+        { "category": 4, "name": "framedrop", "value": "1" },
+        { "category": 4, "name": "max-fps", "value": "60" },
+        { "category": 4, "name": "packet-buffering", "value": "0" }
       ]
     },
     {
       "group": "硬解码(IJK/EXO通用)",
       "options": [
-        {
-          "category": 4,
-          "name": "mediacodec",
-          "value": "1"
-        },
-        {
-          "category": 4,
-          "name": "mediacodec-auto-rotate",
-          "value": "1"
-        },
-        {
-          "category": 4,
-          "name": "mediacodec-hevc",
-          "value": "1"
-        },
-        {
-          "category": 4,
-          "name": "opensles",
-          "value": "0"
-        }
+        { "category": 4, "name": "mediacodec", "value": "1" },
+        { "category": 4, "name": "mediacodec-auto-rotate", "value": "1" },
+        { "category": 4, "name": "mediacodec-hevc", "value": "1" },
+        { "category": 4, "name": "opensles", "value": "0" }
       ]
     }
   ],

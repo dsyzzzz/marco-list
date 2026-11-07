@@ -32,44 +32,56 @@
 
 ---
 
-## 三、已上线（2026-11-07 已完成）
+## 三、已上线（2026-11-07 已完成，含无代理实测）
 
-仓库已建好并推送完毕，raw 三个文件实测均返回 `200`：
+仓库已建好：`https://github.com/dsyzzzz/marco-list`（公开，`main`）。
 
-| 地址 | 内容 | 状态 |
-|---|---|---|
-| https://github.com/dsyzzzz/marco-list | 公开仓库 | 已创建 |
-| `https://raw.githubusercontent.com/dsyzzzz/marco-list/main/tvbox.json` | 订阅入口 3076 B | 200 |
-| `https://raw.githubusercontent.com/dsyzzzz/marco-list/main/live.m3u` | 直播清单 21169 B | 200 |
-| `https://raw.githubusercontent.com/dsyzzzz/marco-list/main/README.md` | 说明 1346 B | 200 |
+### 关掉代理后的实测结果（重要）
 
-`tvbox.json` 里 `lives[2].url` 已写成你自己 `live.m3u` 的 raw 地址，不用再改。
-另外两条（fanmingming、iptv-org）保留作兜底——它们是自动更新的活水，你自建清单哪天全挂了还能救回来。
+| 目标 | 直连 |
+|---|---|
+| `raw.githubusercontent.com` / `github.com` | **超时，连不上** |
+| `cdn.jsdelivr.net`（含 fastly / gcore 节点） | **200 通** |
+| 5 个点播采集站（量子/非凡/博大/无尽/红牛） | 全部 200 通 |
+| 直播流（GITV、cztv 等国内 IP） | 通 |
+| `live.fanmingming.cn` EPG | 超时 → 已换成 jsdelivr 镜像 `e.xml` |
+
+**所以订阅已整体切到 jsdelivr：代理开或关都能用。** `tvbox.json` 里三条 lives 和 `live.m3u` 的 `x-tvg-url` 全部改成 `cdn.jsdelivr.net/gh/...`。
 
 ### 现在只差一步：Marco Movie 导入
 
 ```
 设置 → 订阅管理 / 配置地址 → 粘贴：
-https://raw.githubusercontent.com/dsyzzzz/marco-list/main/tvbox.json
+https://cdn.jsdelivr.net/gh/dsyzzzz/marco-list@da2db24ab177/tvbox.json
 → 确定 → 重启 App
 ```
 
-导入后应该看到：点播 5 个站点、直播 3 个分组。搜一部正在更新的剧（如「现在就出发第四季」）验证点播；进「央视高清」「4K超高清」「体育」分组验证直播。
+用固定 commit SHA 而不是 `@main`，是为了绕开 jsdelivr 的缓存（GitHub 上文件已更新，`@main` 可能还回旧版）。换源推送后把 SHA 换成新 commit 前 12 位即可。想跟随最新版可用 `@main`，但有缓存延迟。
+
+导入后应该看到：点播 5 个站点、直播 3 个分组。搜一部正在更新的剧验证点播；进「央视高清」「4K超高清」「体育」分组验证直播。
 
 ### 以后换源的完整动作
 
 ```
 改本地 F:\dsh_workspace\my-list\ 里的文件
-→ node check.mjs              （体检）
-→ git add -A && git commit -m "换源" && git push
-→ 播放器端下拉刷新订阅       （Raw CDN 缓存最长 5 分钟，急用加 ?v=2）
+→ node check.mjs                              （体检）
+→ git add -A && git commit -m "换源" && git push        （代理开着 / git 直连可用时）
+  或 python local/push_no_proxy.py --all               （代理关了、git push 被重置时）
+→ purge 缓存：
+   curl https://purge.jsdelivr.net/gh/dsyzzzz/marco-list@main/tvbox.json
+   curl https://purge.jsdelivr.net/gh/dsyzzzz/marco-list@main/live.m3u
+→ 把订阅地址里的 commit SHA 换成新的
 ```
 
-本机 git 已配置 `http/https.proxy = http://127.0.0.1:7899`，推送走这个代理；凭据由 Git Credential Manager 保管，不用反复输密码。
+凭据由 Git Credential Manager 保管，不用反复输密码；仓库本地代理配置已清空（代理关闭后直连 git 可用）。
+
+### 附：完全离线方案（连 jsdelivr 都不依赖）
+
+在常开的电脑 / NAS 上跑 `python local/serve.py`，会打印 `http://192.168.1.8:8787/tvbox.local.json` 这类地址，同一 WiFi 下的电视 / 手机直接填它。订阅与直播清单全在本机，点播源仍为国内公共采集站。
 
 ### 附：若想迁移到别的托管（当前用 A）
 
-**A. GitHub 仓库（当前采用）** — 已就绪，无需操作。
+**A. GitHub 仓库 + jsdelivr CDN（当前采用）** — 已就绪，无需操作。
 
 **B. Gist**
 ```

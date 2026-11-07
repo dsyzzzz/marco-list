@@ -1,1 +1,110 @@
-ewogICJfY29tbWVudCI6ICJNYXJjbyBNb3ZpZSDorqLpmIXlhaXlj6PjgILlhajpg6jotbAganNkZWxpdnIgQ0RO77yM5Luj55CG5byA5YWz6YO95LiN5b2x5ZON77yb5pS55rqQ5ZCOIHB1c2gg5YiwIEdpdEh1YiDljbPlj6/jgIIyMDI2LTExLTA3IOWunua1i+OAgiIsCiAgInNpdGVzIjogWwogICAgewogICAgICAia2V5IjogImx6aWFwaSIsCiAgICAgICJuYW1lIjogIumHj+WtkMK357u85ZCIKOW4pk1QNOmrmOeggeeOh+ebtOmTvikiLAogICAgICAidHlwZSI6IDEsCiAgICAgICJhcGkiOiAiaHR0cHM6Ly9jai5semlhcGkuY29tL2FwaS5waHAvcHJvdmlkZS92b2QvIiwKICAgICAgInNlYXJjaGFibGUiOiAxLAogICAgICAicXVpY2tTZWFyY2giOiAxLAogICAgICAiZmlsdGVyYWJsZSI6IDEsCiAgICAgICJleHQiOiAiIgogICAgfSwKICAgIHsKICAgICAgImtleSI6ICJmZnp5YXBpIiwKICAgICAgIm5hbWUiOiAi6Z2e5YehwrfmnoHpgJ/mm7TmlrAiLAogICAgICAidHlwZSI6IDEsCiAgICAgICJhcGkiOiAiaHR0cHM6Ly9jai5mZnp5YXBpLmNvbS9hcGkucGhwL3Byb3ZpZGUvdm9kLyIsCiAgICAgICJzZWFyY2hhYmxlIjogMSwKICAgICAgInF1aWNrU2VhcmNoIjogMSwKICAgICAgImZpbHRlcmFibGUiOiAxLAogICAgICAiZXh0IjogIiIKICAgIH0sCiAgICB7CiAgICAgICJrZXkiOiAiYXBpYmR6eSIsCiAgICAgICJuYW1lIjogIuWNmuWkp8K3NEvnlLXlvbEv5L2T6IKyIiwKICAgICAgInR5cGUiOiAxLAogICAgICAiYXBpIjogImh0dHBzOi8vYXBpLmFwaWJkenkuY29tL2FwaS5waHAvcHJvdmlkZS92b2QvIiwKICAgICAgInNlYXJjaGFibGUiOiAxLAogICAgICAicXVpY2tTZWFyY2giOiAxLAogICAgICAiZmlsdGVyYWJsZSI6IDEsCiAgICAgICJleHQiOiAiIgogICAgfSwKICAgIHsKICAgICAgImtleSI6ICJ3dWppbmFwaSIsCiAgICAgICJuYW1lIjogIuaXoOWwvcK35b2T5pel5L2T6IKy6LWb5LqL5b2V5YOPIiwKICAgICAgInR5cGUiOiAxLAogICAgICAiYXBpIjogImh0dHBzOi8vYXBpLnd1amluYXBpLm1lL2FwaS5waHAvcHJvdmlkZS92b2QvIiwKICAgICAgInNlYXJjaGFibGUiOiAxLAogICAgICAicXVpY2tTZWFyY2giOiAxLAogICAgICAiZmlsdGVyYWJsZSI6IDEsCiAgICAgICJleHQiOiAiIgogICAgfSwKICAgIHsKICAgICAgImtleSI6ICJob25nbml1IiwKICAgICAgIm5hbWUiOiAi57qi54mbwrfliafpm4bnu7zoiboiLAogICAgICAidHlwZSI6IDEsCiAgICAgICJhcGkiOiAiaHR0cHM6Ly93d3cuaG9uZ25pdXp5Mi5jb20vYXBpLnBocC9wcm92aWRlL3ZvZC8iLAogICAgICAic2VhcmNoYWJsZSI6IDEsCiAgICAgICJxdWlja1NlYXJjaCI6IDEsCiAgICAgICJmaWx0ZXJhYmxlIjogMSwKICAgICAgImV4dCI6ICIiCiAgICB9CiAgXSwKICAibGl2ZXMiOiBbCiAgICB7CiAgICAgICJuYW1lIjogIuKRoCDlpK7op4bljavop4bpq5jmuIXCt+iHquWKqOabtOaWsChFUEcpIiwKICAgICAgInR5cGUiOiAwLAogICAgICAidXJsIjogImh0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9naC9mYW5taW5nbWluZy9saXZlQG1haW4vdHYvbTN1L2luZGV4Lm0zdSIsCiAgICAgICJwbGF5ZXJUeXBlIjogMSwKICAgICAgInVhIjogIm9raHR0cC8zLjE1LjMiLAogICAgICAiZXBnIjogImh0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9naC9mYW5taW5nbWluZy9saXZlQG1haW4vZS54bWwiLAogICAgICAibG9nbyI6ICIiLAogICAgICAidGltZW91dCI6IDIwCiAgICB9LAogICAgewogICAgICAibmFtZSI6ICLikaEg57u85ZCIwrflpK7op4bljavop4bkvZPogrI0SyjmtLvmsLTlhZzlupUpIiwKICAgICAgInR5cGUiOiAwLAogICAgICAidXJsIjogImh0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9naC9pcHR2LW9yZy9pcHR2QG1hc3Rlci9zdHJlYW1zL2NuLm0zdSIsCiAgICAgICJwbGF5ZXJUeXBlIjogMSwKICAgICAgInVhIjogIm9raHR0cC8zLjE1LjMiLAogICAgICAiZXBnIjogImh0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9naC9mYW5taW5nbWluZy9saXZlQG1haW4vZS54bWwiLAogICAgICAibG9nbyI6ICIiLAogICAgICAidGltZW91dCI6IDIwCiAgICB9LAogICAgewogICAgICAibmFtZSI6ICLikaIg44CQ6Ieq5bu657K+6YCJ44CRNEsv5Y2r6KeGL+S9k+iCsiIsCiAgICAgICJ0eXBlIjogMCwKICAgICAgInVybCI6ICJodHRwczovL2Nkbi5qc2RlbGl2ci5uZXQvZ2gvZHN5enp6ei9tYXJjby1saXN0QG1haW4vbGl2ZS5tM3UiLAogICAgICAicGxheWVyVHlwZSI6IDEsCiAgICAgICJ1YSI6ICJva2h0dHAvMy4xNS4zIiwKICAgICAgImVwZyI6ICJodHRwczovL2Nkbi5qc2RlbGl2ci5uZXQvZ2gvZmFubWluZ21pbmcvbGl2ZUBtYWluL2UueG1sIiwKICAgICAgImxvZ28iOiAiIiwKICAgICAgInRpbWVvdXQiOiAyMAogICAgfQogIF0sCiAgInBhcnNlcyI6IFtdLAogICJmbGFncyI6IFtdLAogICJpamsiOiBbCiAgICB7CiAgICAgICJncm91cCI6ICLova/op6PnoIEiLAogICAgICAib3B0aW9ucyI6IFsKICAgICAgICB7ICJjYXRlZ29yeSI6IDQsICJuYW1lIjogImZyYW1lZHJvcCIsICJ2YWx1ZSI6ICIxIiB9LAogICAgICAgIHsgImNhdGVnb3J5IjogNCwgIm5hbWUiOiAibWF4LWZwcyIsICJ2YWx1ZSI6ICI2MCIgfSwKICAgICAgICB7ICJjYXRlZ29yeSI6IDQsICJuYW1lIjogInBhY2tldC1idWZmZXJpbmciLCAidmFsdWUiOiAiMCIgfQogICAgICBdCiAgICB9LAogICAgewogICAgICAiZ3JvdXAiOiAi56Gs6Kej56CBKElKSy9FWE/pgJrnlKgpIiwKICAgICAgIm9wdGlvbnMiOiBbCiAgICAgICAgeyAiY2F0ZWdvcnkiOiA0LCAibmFtZSI6ICJtZWRpYWNvZGVjIiwgInZhbHVlIjogIjEiIH0sCiAgICAgICAgeyAiY2F0ZWdvcnkiOiA0LCAibmFtZSI6ICJtZWRpYWNvZGVjLWF1dG8tcm90YXRlIiwgInZhbHVlIjogIjEiIH0sCiAgICAgICAgeyAiY2F0ZWdvcnkiOiA0LCAibmFtZSI6ICJtZWRpYWNvZGVjLWhldmMiLCAidmFsdWUiOiAiMSIgfSwKICAgICAgICB7ICJjYXRlZ29yeSI6IDQsICJuYW1lIjogIm9wZW5zbGVzIiwgInZhbHVlIjogIjAiIH0KICAgICAgXQogICAgfQogIF0sCiAgImRvaCI6IFtdLAogICJ3YWxsIjogIiIKfQo=
+{
+  "_comment": "Marco Movie 订阅入口。全部走 jsdelivr CDN，代理开关都不影响；改源后 push 到 GitHub 即可。2026-11-07 实测。",
+  "sites": [
+    {
+      "key": "lziapi",
+      "name": "量子·综合(带MP4高码率直链)",
+      "type": 1,
+      "api": "https://cj.lziapi.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": ""
+    },
+    {
+      "key": "ffzyapi",
+      "name": "非凡·极速更新",
+      "type": 1,
+      "api": "https://cj.ffzyapi.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": ""
+    },
+    {
+      "key": "apibdzy",
+      "name": "博大·4K电影/体育",
+      "type": 1,
+      "api": "https://api.apibdzy.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": ""
+    },
+    {
+      "key": "wujinapi",
+      "name": "无尽·当日体育赛事录像",
+      "type": 1,
+      "api": "https://api.wujinapi.me/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": ""
+    },
+    {
+      "key": "hongniu",
+      "name": "红牛·剧集综艺",
+      "type": 1,
+      "api": "https://www.hongniuzy2.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": ""
+    }
+  ],
+  "lives": [
+    {
+      "name": "① 央视卫视高清·自动更新(EPG)",
+      "type": 0,
+      "url": "https://cdn.jsdelivr.net/gh/fanmingming/live@main/tv/m3u/index.m3u",
+      "playerType": 1,
+      "ua": "okhttp/3.15.3",
+      "epg": "https://cdn.jsdelivr.net/gh/fanmingming/live@main/e.xml",
+      "logo": "",
+      "timeout": 20
+    },
+    {
+      "name": "② 综合·央视卫视体育4K(活水兜底)",
+      "type": 0,
+      "url": "https://cdn.jsdelivr.net/gh/iptv-org/iptv@master/streams/cn.m3u",
+      "playerType": 1,
+      "ua": "okhttp/3.15.3",
+      "epg": "https://cdn.jsdelivr.net/gh/fanmingming/live@main/e.xml",
+      "logo": "",
+      "timeout": 20
+    },
+    {
+      "name": "③ 【自建精选】4K/卫视/体育",
+      "type": 0,
+      "url": "https://cdn.jsdelivr.net/gh/dsyzzzz/marco-list@main/live.m3u",
+      "playerType": 1,
+      "ua": "okhttp/3.15.3",
+      "epg": "https://cdn.jsdelivr.net/gh/fanmingming/live@main/e.xml",
+      "logo": "",
+      "timeout": 20
+    }
+  ],
+  "parses": [],
+  "flags": [],
+  "ijk": [
+    {
+      "group": "软解码",
+      "options": [
+        { "category": 4, "name": "framedrop", "value": "1" },
+        { "category": 4, "name": "max-fps", "value": "60" },
+        { "category": 4, "name": "packet-buffering", "value": "0" }
+      ]
+    },
+    {
+      "group": "硬解码(IJK/EXO通用)",
+      "options": [
+        { "category": 4, "name": "mediacodec", "value": "1" },
+        { "category": 4, "name": "mediacodec-auto-rotate", "value": "1" },
+        { "category": 4, "name": "mediacodec-hevc", "value": "1" },
+        { "category": 4, "name": "opensles", "value": "0" }
+      ]
+    }
+  ],
+  "doh": [],
+  "wall": ""
+}

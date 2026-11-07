@@ -1,0 +1,110 @@
+{
+  "_comment": "Marco Movie 订阅入口。上传本文件到 GitHub/Gist 后，把 lives[2].url 换成你自己 live.m3u 的 raw 地址；详见 SOURCES.md。2026-11-07 实测源。",
+  "sites": [
+    {
+      "key": "lziapi",
+      "name": "量子·综合(带MP4高码率直链)",
+      "type": 1,
+      "api": "https://cj.lziapi.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": ""
+    },
+    {
+      "key": "ffzyapi",
+      "name": "非凡·极速更新",
+      "type": 1,
+      "api": "https://cj.ffzyapi.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": ""
+    },
+    {
+      "key": "apibdzy",
+      "name": "博大·4K电影/体育",
+      "type": 1,
+      "api": "https://api.apibdzy.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": ""
+    },
+    {
+      "key": "wujinapi",
+      "name": "无尽·当日体育赛事录像",
+      "type": 1,
+      "api": "https://api.wujinapi.me/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": ""
+    },
+    {
+      "key": "hongniu",
+      "name": "红牛·剧集综艺",
+      "type": 1,
+      "api": "https://www.hongniuzy2.com/api.php/provide/vod/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": ""
+    }
+  ],
+  "lives": [
+    {
+      "name": "① 央视卫视高清·自动更新(EPG)",
+      "type": 0,
+      "url": "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/index.m3u",
+      "playerType": 1,
+      "ua": "okhttp/3.15.3",
+      "epg": "https://live.fanmingming.cn/e.xml",
+      "logo": "",
+      "timeout": 20
+    },
+    {
+      "name": "② 综合·央视卫视体育4K(活水兜底)",
+      "type": 0,
+      "url": "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/cn.m3u",
+      "playerType": 1,
+      "ua": "okhttp/3.15.3",
+      "epg": "https://live.fanmingming.cn/e.xml",
+      "logo": "",
+      "timeout": 20
+    },
+    {
+      "name": "③ 【自建精选】4K/卫视/体育",
+      "type": 0,
+      "url": "https://raw.githubusercontent.com/dsyzzzz/marco-list/main/live.m3u",
+      "playerType": 1,
+      "ua": "okhttp/3.15.3",
+      "epg": "https://live.fanmingming.cn/e.xml",
+      "logo": "",
+      "timeout": 20
+    }
+  ],
+  "parses": [],
+  "flags": [],
+  "ijk": [
+    {
+      "group": "软解码",
+      "options": [
+        { "category": 4, "name": "framedrop", "value": "1" },
+        { "category": 4, "name": "max-fps", "value": "60" },
+        { "category": 4, "name": "packet-buffering", "value": "0" }
+      ]
+    },
+    {
+      "group": "硬解码(IJK/EXO通用)",
+      "options": [
+        { "category": 4, "name": "mediacodec", "value": "1" },
+        { "category": 4, "name": "mediacodec-auto-rotate", "value": "1" },
+        { "category": 4, "name": "mediacodec-hevc", "value": "1" },
+        { "category": 4, "name": "opensles", "value": "0" }
+      ]
+    }
+  ],
+  "doh": [],
+  "wall": ""
+}

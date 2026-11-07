@@ -29,8 +29,7 @@ API = "https://api.github.com"
 REPO = "dsyzzzz/marco-list"
 BRANCH = "main"
 CORE = ["tvbox.json", "live.m3u", "README.md", "SOURCES.md"]
-EXTRA = ["local/serve.py", "local/direct_test.py", "local/mirror_test.py",
-         "local/epg_test.py", "local/push_no_proxy.py"]
+EXTRA = ["local/serve.py", "local/verify_subscription.py", "local/push_no_proxy.py"]
 
 ctx = ssl.create_default_context()
 opener = urllib.request.build_opener(

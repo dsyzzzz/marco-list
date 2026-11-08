@@ -1,0 +1,41 @@
+#EXTM3U x-tvg-url="https://cdn.jsdelivr.net/gh/fanmingming/live@main/e.xml"
+#EXTINF:-1 tvg-id="CCTV1" tvg-name="CCTV-1 综合 [720·备]" group-title="央视",CCTV-1 综合 [720·备]
+http://74.91.26.218:82/live/cctv1hd.m3u8
+#EXTINF:-1 tvg-id="CCTV2" tvg-name="CCTV-2 财经 [720·备]" group-title="央视",CCTV-2 财经 [720·备]
+http://74.91.26.218:82/live/cctv2hd.m3u8
+#EXTINF:-1 tvg-id="CCTV3" tvg-name="CCTV-3 综艺 [720·备]" group-title="央视",CCTV-3 综艺 [720·备]
+http://74.91.26.218:82/live/cctv3hd.m3u8
+#EXTINF:-1 tvg-id="CCTV4" tvg-name="CCTV-4 中文国际 [720·备]" group-title="央视",CCTV-4 中文国际 [720·备]
+http://74.91.26.218:82/live/cctv4hd.m3u8
+#EXTINF:-1 tvg-id="CCTV7" tvg-name="CCTV-7 国防军事 [720·备]" group-title="央视",CCTV-7 国防军事 [720·备]
+http://74.91.26.218:82/live/cctv7hd.m3u8
+#EXTINF:-1 tvg-id="CCTV8" tvg-name="CCTV-8 电视剧 [720·备]" group-title="央视",CCTV-8 电视剧 [720·备]
+http://74.91.26.218:82/live/cctv8hd.m3u8
+#EXTINF:-1 tvg-id="CCTV9" tvg-name="CCTV-9 纪录 [备]" group-title="央视",CCTV-9 纪录 [备]
+https://xykt-fix.github.io/Y77.m3u8
+#EXTINF:-1 tvg-id="CCTV10" tvg-name="CCTV-10 科教 [720·备]" group-title="央视",CCTV-10 科教 [720·备]
+http://74.91.26.218:82/live/cctv10hd.m3u8
+#EXTINF:-1 tvg-id="CCTV11" tvg-name="CCTV-11 戏曲 [720·备]" group-title="央视",CCTV-11 戏曲 [720·备]
+http://74.91.26.218:82/live/cctv11hd.m3u8
+#EXTINF:-1 tvg-id="CCTV12" tvg-name="CCTV-12 社会与法 [720·备]" group-title="央视",CCTV-12 社会与法 [720·备]
+http://74.91.26.218:82/live/cctv12hd.m3u8
+#EXTINF:-1 tvg-id="CCTV13" tvg-name="CCTV-13 新闻 [720·备]" group-title="央视",CCTV-13 新闻 [720·备]
+http://74.91.26.218:82/live/cctv13hd.m3u8
+#EXTINF:-1 tvg-id="CCTV14" tvg-name="CCTV-14 少儿 [1080]" group-title="央视",CCTV-14 少儿 [1080]
+http://74.91.26.218:82/live/cctv14hd.m3u8
+#EXTINF:-1 tvg-id="CCTV15" tvg-name="CCTV-15 音乐 [720]" group-title="央视",CCTV-15 音乐 [720]
+http://74.91.26.218:82/live/cctv15hd.m3u8
+#EXTINF:-1 tvg-id="CCTV16" tvg-name="CCTV-16 奥林匹克 [1080]" group-title="央视·体育",CCTV-16 奥林匹克 [1080]
+http://74.91.26.218:82/live/cctv16hd.m3u8
+#EXTINF:-1 tvg-id="CCTV8K" tvg-name="CCTV-8K 超高清 [8K]" group-title="4K超高清",CCTV-8K 超高清 [8K]
+http://192.151.150.154/live/cctv8k.m3u8
+#EXTINF:-1 tvg-id="Hebei4K" tvg-name="河北卫视 [4K 2160p]" group-title="4K超高清",河北卫视 [4K 2160p]
+https://event.pull.hebtv.com/live/live101.m3u8
+#EXTINF:-1 tvg-id="Hunan4K" tvg-name="湖南卫视 [4K 2160p·token 有时效]" group-title="4K超高清",湖南卫视 [4K 2160p·token 有时效]
+http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/dWlwPTEyNy4wLjAuMSZ1aWQ9cWluZy1jbXMmbm5fdGltZXpvbmU9OCZjZG5leF9pZD1hbF9obHNfbGR2dCZ1dWlkPTliODY4NmU5ZTM2YzYwMmMmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8
+#EXTINF:-1 tvg-id="CCTV17" tvg-name="CCTV-17 农业农村 [1080]" group-title="央视",CCTV-17 农业农村 [1080]
+http://74.91.26.218:82/live/cctv17hd.m3u8
+#EXTINF:-1 tvg-id="ZhejiangTV" tvg-name="浙江卫视 [1080]" group-title="卫视",浙江卫视 [1080]
+http://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8
+#EXTINF:-1 tvg-id="CGTN" tvg-name="CGTN 英语 [1080]" group-title="其他",CGTN 英语 [1080]
+https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8
